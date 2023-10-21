@@ -5,8 +5,29 @@
     background-color: red;
 }
 
-.debug main{
-    background-color: aquamarine;
+.debug section{
+    background-color: aqua;
+    height: 600px;
+}
+
+.debug section .container{
+    background-color: rgb(152, 152, 232);
+    height: 100%;
+    border: 2px solid brown;
+    align-items: center;
+}
+
+.debug .demo .row{
+    background-color: orange;
+    width: 100%;
+    height: 500px;
+}
+
+.debug .demo .col-4,
+.debug .demo .col-6,
+.debug .demo .col-8{
+    background-color: blue;
+    border: 2px solid brown;
 }
 
 /* #endregion Debug */
@@ -17,6 +38,10 @@
 
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 /* #endregion Utility */
@@ -38,6 +63,23 @@
 .container{
     width: 60%;
     margin: 0 auto;
+    max-width: 1200px;
+}
+
+[class^='col-']{
+    padding: 1rem;
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.col-6{
+    width: calc((100% / 12) * 6);
+}
+
+.col-8{
+    width: calc((100% / 12) * 8);
 }
 
 /* #endregion Common */
