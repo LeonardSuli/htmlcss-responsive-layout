@@ -1,0 +1,57 @@
+/* #region Debug */
+
+.debug header{
+    width: 100%;
+    background-color: red;
+}
+
+.debug main{
+    background-color: aquamarine;
+}
+
+/* #endregion Debug */
+
+
+
+/* #region Utility */
+
+.flex{
+    display: flex;
+}
+
+/* #endregion Utility */
+
+
+
+/* #region Common */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* #endregion Common */
+
+
+
+/* Header */
+
+header .container{
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+/* Main */
+
+
