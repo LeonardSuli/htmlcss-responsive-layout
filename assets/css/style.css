@@ -17,17 +17,24 @@
     align-items: center;
 }
 
-.debug .demo .row{
+.debug .row{
     background-color: orange;
     width: 100%;
     height: 500px;
+    padding: 1rem;
 }
 
-.debug .demo .col-4,
-.debug .demo .col-6,
-.debug .demo .col-8{
+.debug .col-4,
+.debug .col-6,
+.debug .col-8{
     background-color: blue;
     border: 2px solid brown;
+}
+
+.debug .card{
+    background-color: blue;
+    border: 2px solid brown;
+    height: 150px;
 }
 
 /* #endregion Debug */
