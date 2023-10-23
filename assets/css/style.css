@@ -37,6 +37,16 @@
     height: 150px;
 }
 
+.debug .container-sm{
+    background-color: blueviolet;
+    height: 600px;
+}
+
+.debug footer{
+    background-color: greenyellow;
+    height: 100px;
+}
+
 /* #endregion Debug */
 
 
@@ -69,8 +79,13 @@
 
 .container{
     width: 60%;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sm{
+    width: 600px;
+    margin: 0 auto;
 }
 
 [class^='col-']{
