@@ -84,7 +84,7 @@
 }
 
 .container-sm{
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -127,6 +127,10 @@ header .container{
         width: 100%;
     }
 
+    .container-sm{
+        width: 100%;
+    }
+
     [class^="col-"]{
         width: 100%;
     }
@@ -139,6 +143,10 @@ header .container{
 
     .container{
         width: 100%;
+    }
+
+    .container-sm{
+        max-width: 600px;
     }
 }
 
