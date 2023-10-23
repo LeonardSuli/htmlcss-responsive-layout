@@ -118,4 +118,16 @@ header .container{
 
 /* Main */
 
+@media screen and (max-width: 480px){
+    header ul li{
+        display: none;
+    }
 
+    .container{
+        width: 100%;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+}
