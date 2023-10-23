@@ -127,7 +127,7 @@ header .container{
         width: 100%;
     }
 
-    .row{
-        flex-wrap: wrap;
+    [class^="col-"]{
+        width: 100%;
     }
 }
