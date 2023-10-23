@@ -29,6 +29,7 @@
 .debug .col-8{
     background-color: blue;
     border: 2px solid brown;
+    border-radius: 1rem;
 }
 
 .debug .card{
@@ -147,6 +148,10 @@ header .container{
 
     .container-sm{
         max-width: 600px;
+    }
+
+    .planning .col-6{
+        width: 100%;
     }
 
     .benefits .col-4{
