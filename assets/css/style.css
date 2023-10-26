@@ -1,8 +1,9 @@
+
 /* #region Debug */
 
 .debug header{
-    width: 100%;
-    background-color: red;
+    /* width: 100%;
+    background-color: red; */
 }
 
 .debug section{
@@ -29,13 +30,11 @@
 .debug .col-8{
     background-color: blue;
     border: 2px solid brown;
-    border-radius: 1rem;
 }
 
 .debug .card{
     background-color: blue;
     border: 2px solid brown;
-    height: 150px;
 }
 
 .debug .container-sm{
@@ -62,6 +61,7 @@
     flex-wrap: wrap;
 }
 
+
 /* #endregion Utility */
 
 
@@ -75,7 +75,11 @@
 }
 
 :root{
-
+    --primary: rgb(151, 146, 228);
+    --blue: rgb(0, 132, 253);
+    --sky: rgb(181, 221, 255);
+    --dark: rgb(51, 51, 51);
+    --white: rgb(255, 255, 255);
 }
 
 .container{
@@ -91,6 +95,7 @@
 
 [class^='col-']{
     padding: 1rem;
+    border-radius: 1rem;
 }
 
 .col-4{
@@ -105,19 +110,74 @@
     width: calc((100% / 12) * 8);
 }
 
+.col-12{
+    width: 100%;
+}
+
 /* #endregion Common */
 
 
 
 /* Header */
 
+header{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
 header .container{
     justify-content: space-between;
     padding: 1rem 0;
+    align-items: center;
+}
+
+.menu .desktop ul{
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu .desktop{
+    display: none;
+
+    & a{
+        color: var(--white);
+        text-decoration: none;
+    }
 }
 
 
 /* Main */
+
+
+
+
+
+
+
+.testimonials .card{
+    min-height: 150px;
+    background-color: var(--primary);
+    margin: 1rem 0;
+    border-radius: 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.testimonials .avatar{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: red;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.testimonials .text{
+    padding: 1rem;
+}
+
+
+
+/* Media Query */
 
 @media screen and (max-width: 480px){
     header ul li{
@@ -137,7 +197,7 @@ header .container{
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 768px){
     header ul li{
         display: none;
     }
@@ -159,8 +219,16 @@ header .container{
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     .container{
         width: 753px;
+    }
+
+    .menu .desktop{
+        display: block;
+    }
+
+    .menu .mobile{
+        display: none;
     }
 }
