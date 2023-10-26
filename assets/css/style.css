@@ -74,6 +74,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 :root{
     --primary: rgb(151, 146, 228);
     --blue: rgb(0, 132, 253);
@@ -91,6 +95,14 @@
 .container-sm{
     max-width: 600px;
     margin: 0 auto;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border-radius: 1rem;
 }
 
 [class^='col-']{
@@ -127,22 +139,33 @@ header{
 
 header .container{
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     align-items: center;
+}
+
+.logo img{
+    width: 70px;
 }
 
 .menu .desktop ul{
     list-style: none;
     gap: 1rem;
+    align-items: center;
 }
 
 .menu .desktop{
     display: none;
+    align-items: center;
 
     & a{
         color: var(--white);
         text-decoration: none;
     }
+}
+
+.btn-light{
+    background-color: var(--white);
+    color: var(--dark);
 }
 
 
@@ -197,7 +220,7 @@ header .container{
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){
     header ul li{
         display: none;
     }
@@ -219,9 +242,10 @@ header .container{
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     .container{
-        width: 753px;
+        min-width: 753px;
+        max-width: 1140px;
     }
 
     .menu .desktop{
