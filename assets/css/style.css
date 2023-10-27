@@ -69,6 +69,14 @@
     position: relative;
 }
 
+.absolute{
+    position: absolute;
+}
+
+.text-white{
+    color: var(--white);
+}
+
 
 /* #endregion Utility */
 
@@ -139,6 +147,10 @@ html{
     width: 100%;
 }
 
+section.planning, section.benefits{
+    background-color: var(--primary);
+}
+
 /* #endregion Common */
 
 
@@ -193,6 +205,7 @@ header .container{
 
 
 /* #region demo */
+
 .demo img{
     width: 200px;
 }
@@ -231,12 +244,18 @@ header .container{
     font-weight: 700;
 }
 
+.demo-img{
+    align-items: flex-end;
+}
+
+.demo .col-8{
+    padding-bottom: 0;
+}
+
 .demo-img img{
-    margin-bottom: -0.5rem;
-    top: 16px;
     text-align: center;
-    margin: auto;
     width: 200px;
+    padding-top: 2rem;
 }
 
 .demo-text>i{
@@ -245,31 +264,99 @@ header .container{
     padding-top: 0.5rem;
 }
 
-
-
-
 /* #endregion Demo */
 
+/* #region planning */
+
+.planning img{
+    width: 100%;
+}
+
+.planning .card{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+
+/* #endregion Planning */
+
+/* #region Testimonials */
+
+.testimonials{
+    padding-bottom: 4rem;
+}
+
+.testimonials-intro{
+    padding: 3rem 0 2rem;
+    text-align: center;
+}
+
+.testimonials h2{
+    font-size: 2.25rem;
+    color: var(--primary);
+    padding: 2rem;
+}
+
+.testimonials .testimonials-intro p{
+    line-height: 2rem;
+}
+
 .testimonials .card{
-    min-height: 150px;
     background-color: var(--primary);
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     border-radius: 2rem;
     align-items: center;
     padding: 1rem;
+    color: var(--white);
 }
 
 .testimonials .avatar{
-    width: 100px;
+    width: 150px;
     aspect-ratio: 1;
-    background-color: red;
     border-radius: 50%;
     flex-shrink: 0;
+    object-fit: cover;
+    margin: 0.75rem 0 1.75rem;
 }
 
 .testimonials .text{
     padding: 1rem;
+    line-height: 2rem;
 }
+
+.testimonials .name{
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+/* #endregion Testimonials */
+
+/* #region Benefits */
+
+.benefits .container{
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.benefits .card{
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.benefits .title{
+    text-align: center;
+    color: var(--white);
+    font-size: 2.25rem;
+}
+
+.benefits .card h3{
+    font-size: 3.5rem;
+}
+
+/* #endregion Benefits */
+
+
 
 
 /* #endregion Main */
@@ -293,6 +380,23 @@ header .container{
 
     .logo{
         margin-left: 1.5rem;
+    }
+
+    .demo-img img{
+        margin: auto;
+    }
+
+    .testimonials{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-intro h2{
+        font-size: 1.75rem;
+    }
+
+    .testimonials .card{
+        flex-direction: column;
     }
 
     [class^="col-"]{
