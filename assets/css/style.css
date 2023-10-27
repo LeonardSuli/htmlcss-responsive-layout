@@ -339,19 +339,42 @@ header .container{
     padding: 3rem 0;
 }
 
-.benefits .card{
-    background-color: var(--white);
-    border-radius: 1rem;
-}
-
 .benefits .title{
     text-align: center;
     color: var(--white);
     font-size: 2.25rem;
+    padding-bottom: 3rem;
+}
+
+.benefits .card{
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
 }
 
 .benefits .card h3{
     font-size: 3.5rem;
+    color: var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+.benefits .card h4{
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.benefits .card p{
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.benefits .btn-purple{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 2.5rem;
+    letter-spacing: 2px;
 }
 
 /* #endregion Benefits */
@@ -371,7 +394,7 @@ header .container{
 
     .container{
         width: 100%;
-        padding: 0.5rem
+        padding: 1rem
     }
 
     .container-sm{
@@ -399,6 +422,11 @@ header .container{
         flex-direction: column;
     }
 
+    .benefits .title{
+        font-size: 1.5rem;
+        padding: 0 1rem 1.5rem;
+    }
+
     [class^="col-"]{
         width: 100%;
     }
@@ -409,7 +437,7 @@ header .container{
 
     .container{
         width: 100%;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .container-sm{
@@ -431,6 +459,11 @@ header .container{
     .benefits .col-4{
         width: 50%;
     }
+
+    .benefits .title{
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 769px){
