@@ -444,7 +444,7 @@ header .container{
         color: var(--white);
         font-size: 14px;
         padding-bottom: 2rem;
-        width: 400px;
+        max-width: 400px;
         margin: 0 auto;
         line-height: 2rem;
     }
@@ -469,6 +469,28 @@ header .container{
 /* #endregion Get-Started */
 
 /* #endregion Main */
+
+
+/* #region Footer */
+
+footer{
+    background-color: var(--dark);
+    
+    & .container-sm{
+        max-width: 500px;
+    }
+
+    & p{
+        color: var(--white);
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    & a{
+        color: var(--primary);
+    }
+}
+/* #endregion Footer */
 
 
 /* Media Query */
@@ -511,6 +533,15 @@ header .container{
     .benefits .title{
         font-size: 1.5rem;
         padding: 0 1rem 1.5rem;
+    }
+
+    .get-started h2{
+        font-size: 2rem;
+    }
+
+    footer .container-sm{
+        padding: 3rem 1rem;
+        font-size: 12px;
     }
 
     [class^="col-"]{
