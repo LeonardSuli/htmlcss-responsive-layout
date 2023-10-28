@@ -262,16 +262,48 @@ header .container{
 
 /* #region planning */
 
-.planning img{
-    width: 100%;
-}
-
-.planning .card{
-    background-color: var(--white);
+.planning{
     padding: 2rem;
-    border-radius: 2rem;
-}
+    
+    & img{
+        width: 100%;
+    }
 
+    & .card{
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    & h2{
+    padding-bottom: 3rem;
+    margin-top: 9rem;
+    }
+
+    & .text-girl{
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
+
+    & .text-boy{
+        font-size: 14px;
+        padding-top: 2rem;
+        font-style: italic;
+        line-height: 2rem;
+    }
+
+    & .arrow{
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 2rem;
+        line-height: 30px;
+    }
+}
 
 /* #endregion Planning */
 
@@ -386,14 +418,24 @@ header .container{
     padding-bottom: 3rem;
 }
 
+.about-us .col-8 p{
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+.about-us .images{
+    width: 200px;
+}
+
 .about-us img{
     width: 200px;
     border-radius: 50%;
 }
 
-.about-us .col-8 p{
-    line-height: 2rem;
-    padding-bottom: 3rem;
+.about-us .col-4 .images i{
+    font-size: 4rem;
+    color: var(--primary);
+    position: absolute;
 }
 
 .about-us .text-img{
@@ -516,6 +558,7 @@ footer{
     .demo-img img{
         margin: auto;
     }
+    
 
     .testimonials{
         padding: 1rem;
@@ -571,6 +614,10 @@ footer{
 
     .planning .col-6{
         width: 100%;
+    }
+
+    .planning h2{
+        font-size: 3rem;
     }
 
     .benefits .col-4{
