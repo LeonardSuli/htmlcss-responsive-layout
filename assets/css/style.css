@@ -379,6 +379,44 @@ header .container{
 
 /* #endregion Benefits */
 
+/* #region About-Us */
+
+.about-us{
+    padding: 3rem 1rem 5rem;
+}
+
+.about-us h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    padding-bottom: 3rem;
+}
+
+.about-us img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-us .col-8 p{
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+.about-us .text-img{
+    font-size: 20px;
+    color: var(--primary);
+    padding-right: 5rem;
+    padding-top: 1rem;
+    font-weight: 600;line-height: 2rem;
+}
+
+.btn-about-us{
+    background-color: var(--primary);
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+/* #endregion About-Us */
 
 
 
@@ -462,6 +500,10 @@ header .container{
 
     .benefits .title{
         font-size: 2rem;
+    }
+
+    .about-us .text-img{
+        padding-right: 0;
     }
 
 }
