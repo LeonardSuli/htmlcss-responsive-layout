@@ -425,6 +425,7 @@ header .container{
 
 .about-us .images{
     width: 200px;
+    display: inline-flex;
 }
 
 .about-us img{
@@ -436,6 +437,8 @@ header .container{
     font-size: 4rem;
     color: var(--primary);
     position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .about-us .text-img{
